@@ -3,9 +3,9 @@ import React from 'react';
 import {renderToString,renderToStaticMarkup} from 'react-dom/server';
 import HomePage from '../src/components/homepage/index.js';
 let app=express();
-var server=app.listen(8080,()=>{
-  var host=server.address().address;
-  var port=server.address().port;
+let server=app.listen(8080,()=>{
+  let host=server.address().address;
+  let port=server.address().port;
   console.log('server is start at',host,port);
 });
 //static
